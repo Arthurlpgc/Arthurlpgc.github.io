@@ -1,7 +1,7 @@
 <div class="row">
 <div ng-repeat="lang in main.planguages |orderBy:main.plorder">
 	<div class="card activator" ng-show="lang.progress>0" ng-click="main.langChoice=main.planguages.indexOf(lang)+1" style="width:9em;height: 14em;float:left;margin-left: 1em">
-		<div class="card-image" style="padding:6px 6px 6px 6px;">
+		<div class="card-image activator" style="padding:6px 6px 6px 6px;">
 			<img style="height:8em;width: 8em;"ng-src="{{lang.thumb}}">
 		</div>
 		<div class="card-content" style="padding-top: 0.5em;padding-bottom: 0em;">
