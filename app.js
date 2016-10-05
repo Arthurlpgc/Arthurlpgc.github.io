@@ -7,18 +7,25 @@ app.controller('MainController',function(){
 	this.title=titles[this.area-1];
 	this.overallprogress=1;
   this.langChoice=0;
+
   this.changeArea=function(Carea){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
 	};
+
 	this.isArea=function(Carea){
 		return this.area===Carea;
 	};
+
 	this.Xps=xps;
 	this.plorder='name';
 	this.planguages=ProgLangs;
 	this.certificates=certifArray;
+
+	document.on('click',function(event){
+		if(langChoice!=0)langChoice=0;
+	});
 });
 
 app.directive('aboutme',function(){
