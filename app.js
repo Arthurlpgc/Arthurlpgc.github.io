@@ -194,7 +194,7 @@ certifArray=[
 	{
 		name:"ACM - Coding for the International Collegiate Programming Contest 2016",
 		thumb:"pictures/thumb_icpc.png",
-		link:"certificates/UFPE.pdf"
+		link:"certificates/ICPC2016.pdf"
 	}
 	]
 ];
