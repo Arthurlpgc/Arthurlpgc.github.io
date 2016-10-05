@@ -64,7 +64,7 @@ ProgLangs=[
 		progress:90,
 		relevance:82,
     desc:"Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
-		experiences:["ICPC Coding","Taught Classes of Algorithms in Java to a Class of 60 Computer Science students as Teacher assistant in the first semester of 2016.","Algorithms tutorials in Java, in the Llamas in pajamas GitHub team"],
+		experiences:["ICPC Coding","Taught Classes of Algorithms in Java to a Class of 60 Computer Science students as Teacher assistant in the first semester of 2016.","Algorithms tutorials in Java, in the Llamas in pajamas GitHub team","Minecraft Modding","Small Course on Java"],
 		date:"2012-07-05T01:01:01.001Z"
 	},
 	{
@@ -118,7 +118,7 @@ ProgLangs=[
 		progress:40,
 		relevance:60,
     desc:"Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.",
-		experiences:["Competitive Programming on a few Codeforces","Algorithms tutorials in python, in the Llamas in pajamas GitHub team"],
+		experiences:["Competitive Programming on a few Codeforces","Algorithms tutorials in python, in the Llamas in pajamas GitHub team","<3The first time I tried to code smt<3"],
 		date:"2010-09-05T01:01:01.001Z"
 	},
 	{
