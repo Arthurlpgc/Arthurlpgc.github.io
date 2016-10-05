@@ -201,10 +201,19 @@ certifArray=[
 xps=[
 	{
 		name:"Teaching Assistant, Algorithms 2016",
-		description:"Provided Additional Lectures to over 50 students (on each semester, total of 2) about several topics, as Graph Searching algorithms, Balanced Binary Search trees, Sorting algorithms"
+		description:"Provided Additional Lectures to over 50 students (on each semester, total of 2) about several topics, as Graph Searching algorithms, Balanced Binary Search trees, Sorting algorithms",
+		dateStart:"2016-03-08T01:01:01.001Z",
+		date:"2016-12-20T01:01:01.001Z"
 	},
 	{
-		name:"",
-		description:""
+		name:"International Collegiate Programming Contest 2016-Subregionals Brazil",
+		description:"Got in 55 place among the 779 Competitors in Brazil",
+		date:"2016-08-10T01:01:01.001Z"
+	},
+	{
+		name:"Collaborations on Codepit github team",
+		description:"",
+		dateStart:"2016-09-21T01:01:01.001Z",
+		date:"2016-12-01T01:01:01.001Z"
 	}
 ];
