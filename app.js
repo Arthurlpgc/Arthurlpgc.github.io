@@ -55,7 +55,8 @@ ProgLangs=[
 		progress:95,
 		relevance:85,
     desc:"C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.",
-		experiences:["ICPC Coding","Algorithms tutorials in C++, in the Llamas in pajamas GitHub team"]
+		experiences:["ICPC Coding","Algorithms tutorials in C++, in the Llamas in pajamas GitHub team"],
+		date:"2016-03-05T01:01:01.001Z"
 	},
 	{
 		name:"Java",
@@ -72,7 +73,8 @@ ProgLangs=[
 		progress:88,
 		relevance:55,
     desc:"C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations.",
-		experiences:["ICPC Coding","Taught Classes of Algorithms in C to a Class of 60 computer engineering students as Teacher assistant in the second semester of 2016.","Algorithms tutorials in C, in the Llamas in pajamas GitHub team"]
+		experiences:["ICPC Coding","Taught Classes of Algorithms in C to a Class of 60 computer engineering students as Teacher assistant in the second semester of 2016.","Algorithms tutorials in C, in the Llamas in pajamas GitHub team"],
+		date:"2016-03-05T01:01:01.001Z"
 	},
 	{
 		name:"Javascript",
@@ -80,7 +82,8 @@ ProgLangs=[
 		progress:70,
 		relevance:80,
     desc:"JavaScript is a high-level, dynamic, untyped, and interpreted programming language designed for front-end web applications.",
-		experiences:["This website","Collaborations on Codepit.io","Coded the Radix Sort in parkjs814's AlgorithmVisualizer","Sorting Algorithm Tester","Llamas in pajamas Algorithms Page"]
+		experiences:["This website","Collaborations on Codepit.io","Coded the Radix Sort in parkjs814's AlgorithmVisualizer","Sorting Algorithm Tester","Llamas in pajamas Algorithms Page"],
+		date:"2016-04-05T01:01:01.001Z"
 	},
 	{
 		name:"Html 5",
@@ -88,7 +91,8 @@ ProgLangs=[
 		progress:68,
 		relevance:60,
     desc:"HTML is a markup language used for structuring and presenting content on the World Wide Web.",
-		experiences:["This website","Collaborations on Codepit.io","Sorting Algorithm Tester","Llamas in pajamas Algorithms Page"]
+		experiences:["This website","Collaborations on Codepit.io","Sorting Algorithm Tester","Llamas in pajamas Algorithms Page"],
+		date:"2015-07-05T01:01:01.001Z"
 	},
 	{
 		name:"CSS 3",
@@ -96,7 +100,8 @@ ProgLangs=[
 		progress:65,
 		relevance:30,
     desc:"Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.",
-		experiences:["This website","Sorting Algorithm Tester","Llamas in pajamas Algorithms Page"]
+		experiences:["This website","Sorting Algorithm Tester","Llamas in pajamas Algorithms Page"],
+		date:"2015-07-05T01:01:01.001Z"
 	},
 	{
 		name:"Angular 1.X",
@@ -104,7 +109,8 @@ ProgLangs=[
 		progress:50,
 		relevance:50,
     desc:"AngularJS is a complete JavaScript-based open-source front-end web application framework.",
-		experiences:["Collaborations on Codepit.io","This little public(Yeah it was a fun playground)","A Redirection Script made to point to newest version of the page"]
+		experiences:["Collaborations on Codepit.io","This little public(Yeah it was a fun playground)","A Redirection Script made to point to newest version of the page"],
+		date:"2016-08-05T01:01:01.001Z"
 	},
 	{
 		name:"Python 2.7",
@@ -112,7 +118,8 @@ ProgLangs=[
 		progress:40,
 		relevance:60,
     desc:"Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.",
-		experiences:["Competitive Programming on a few Codeforces","Algorithms tutorials in python, in the Llamas in pajamas GitHub team"]
+		experiences:["Competitive Programming on a few Codeforces","Algorithms tutorials in python, in the Llamas in pajamas GitHub team"],
+		date:"2010-09-05T01:01:01.001Z"
 	},
 	{
 		name:"Node js",
@@ -120,7 +127,8 @@ ProgLangs=[
 		progress:20,
 		relevance:65,
 		desc:"Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools and applications.",
-		experiences:["Basic local server setup."]
+		experiences:["Basic local server setup."],
+		date:"2016-09-05T01:01:01.001Z"
 	},
 	{
 		name:"Oracle SQL",
@@ -128,7 +136,8 @@ ProgLangs=[
 		progress:20,
 		relevance:20,
 		desc:"It is an object-relational database management system produced and marketed by Oracle Corporation.",
-		experiences:["Projects done on the data management subject."]
+		experiences:["Projects done on the data management subject."],
+		date:"2016-08-05T01:01:01.001Z"
 	},
 	{
 		name:"Mongo DB",
