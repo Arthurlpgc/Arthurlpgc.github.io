@@ -23,9 +23,6 @@ app.controller('MainController',function(){
 	this.planguages=ProgLangs;
 	this.certificates=certifArray;
 
-	document.on('click',function(event){
-		if(langChoice!=0)langChoice=0;
-	});
 });
 
 app.directive('aboutme',function(){
