@@ -1,5 +1,6 @@
 var app=angular.module('MainApp',[ ]);
 app.controller('MainController',function(){
+	this.scrsize=screen.size;
 	var aux=document.cookie;
 	if(aux)this.area=parseInt(aux.substring(5,6));
 	else this.area=1;
