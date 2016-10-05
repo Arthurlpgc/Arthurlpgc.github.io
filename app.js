@@ -59,7 +59,7 @@ ProgLangs=[
 		progress:95,
 		relevance:85,
     desc:"C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.",
-		experiences:["ICPC Coding","Algorithms tutorials in C++, in the Llamas in pajamas GitHub team"],
+		experiences:["Coding for the International Collegiate Programming Contest","Algorithms tutorials in C++, in the Llamas in pajamas GitHub team"],
 		date:"2016-03-05T01:01:01.001Z"
 	},
 	{
@@ -68,7 +68,7 @@ ProgLangs=[
 		progress:90,
 		relevance:82,
     desc:"Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
-		experiences:["ICPC Coding","Taught Classes of Algorithms in Java to a Class of 60 Computer Science students as Teacher assistant in the first semester of 2016.","Algorithms tutorials in Java, in the Llamas in pajamas GitHub team","Minecraft Modding","Small Course on Java"],
+		experiences:["Coding for the International Collegiate Programming Contest","Taught Classes of Algorithms in Java to a Class of 60 Computer Science students as Teacher assistant in the first semester of 2016.","Algorithms tutorials in Java, in the Llamas in pajamas GitHub team","Minecraft Modding","Small Course on Java"],
 		date:"2012-07-05T01:01:01.001Z"
 	},
 	{
@@ -77,7 +77,7 @@ ProgLangs=[
 		progress:88,
 		relevance:55,
     desc:"C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations.",
-		experiences:["ICPC Coding","Taught Classes of Algorithms in C to a Class of 60 computer engineering students as Teacher assistant in the second semester of 2016.","Algorithms tutorials in C, in the Llamas in pajamas GitHub team"],
+		experiences:["Coding for the International Collegiate Programming Contest","Taught Classes of Algorithms in C to a Class of 60 computer engineering students as Teacher assistant in the second semester of 2016.","Algorithms tutorials in C, in the Llamas in pajamas GitHub team"],
 		date:"2016-03-05T01:01:01.001Z"
 	},
 	{
@@ -192,7 +192,7 @@ certifArray=[
 		link:"http://codeforces.com/profile/alpgc"
 	},
 	{
-		name:"ACM - ICPC 2016",
+		name:"ACM - Coding for the International Collegiate Programming Contest 2016",
 		thumb:"pictures/thumb_icpc.png",
 		link:"certificates/UFPE.pdf"
 	}
