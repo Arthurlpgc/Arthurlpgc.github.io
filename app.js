@@ -1,9 +1,9 @@
 var app=angular.module('MainApp',[ ]);
 app.controller('MainController',function(){
-	this.title="Arthur Costa's public";
 	var aux=document.cookie;
 	if(aux)this.area=parseInt(aux.substring(5,6));
 	else this.area=1;
+	this.title=titles[this.area-1];
 	this.overallprogress=1;
   this.langChoice=0;
   this.changeArea=function(Carea){
@@ -150,7 +150,7 @@ ProgLangs=[
 	},
 
 ];
-titles=["Arthur Costa's profile","Skills","Achievements","Experience"];
+titles=["Profile","Skills","Achievements","Experience"];
 certifArray=[
 	[
 	{
