@@ -12,8 +12,8 @@ app.controller('MainController',function(){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		this.scrsize=max(window.innerHeight,document.getElementById('Ola').height);
-		console.log("Ola H"+document.getElementById('Ola').height)
+		this.scrsize=Math.max(window.innerHeight,document.getElementById('Ola').height);
+		console.log("Ola H"+document.getElementById('Ola').height);
 	};
 
 	this.isArea=function(Carea){
