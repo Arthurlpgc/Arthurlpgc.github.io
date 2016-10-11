@@ -193,7 +193,7 @@ certifArray=[
 		link:"http://codeforces.com/profile/alpgc"
 	},
 	{
-		name:"ACM - Coding for the International Collegiate Programming Contest 2016",
+		name:"ACM - ICPC 2016",
 		thumb:"pictures/thumb_icpc.png",
 		link:"certificates/ICPC2016.pdf"
 	}
