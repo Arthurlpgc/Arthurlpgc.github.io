@@ -6,13 +6,15 @@ app.controller('MainController',function(){
 	else this.area=1;
 	this.title=titles[this.area-1];
 	this.overallprogress=1;
-  this.langChoice=0;
+  	this.langChoice=0;
 
-  this.changeArea=function(Carea){
+
+
+  	this.changeArea=function(Carea){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		document.getElementById('mainsidebar').height=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
+		setTimeout(function(){document.getElementById('mainsidebar').height=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);},1000);
 	};
 
 	this.isArea=function(Carea){
