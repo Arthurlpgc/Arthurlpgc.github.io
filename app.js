@@ -12,7 +12,7 @@ app.controller('MainController',function(){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		for(i=0;i<10000;i++)this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
+		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	};
 
 	this.isArea=function(Carea){
