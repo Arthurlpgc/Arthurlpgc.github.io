@@ -14,7 +14,6 @@ app.controller('MainController',function(){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		document.getElementById('mainsidebar').style.height=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	};
 
 	this.isArea=function(Carea){
