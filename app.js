@@ -1,6 +1,6 @@
 var app=angular.module('MainApp',[ ]);
 app.controller('MainController',function(){
-	this.scrsize=window.innerHeight;
+	this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	var aux=document.cookie;
 	if(aux)this.area=parseInt(aux.substring(5,6));
 	else this.area=1;
@@ -12,8 +12,7 @@ app.controller('MainController',function(){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		this.scrsize=Math.max(window.innerHeight,document.getElementById('Ola').height);
-		console.log("Ola H"+document.getElementById('Ola').height);
+		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	};
 
 	this.isArea=function(Carea){
