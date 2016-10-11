@@ -157,7 +157,6 @@ ProgLangs=[
 ];
 titles=["Profile","Skills","Achievements","Experience"];
 certifArray=[
-	[
 	{
 		name:"FCE",
 		thumb:"pictures/thumb_FCE.png",
@@ -177,9 +176,7 @@ certifArray=[
 		name:"Algorithms assistant",
 		thumb:"pictures/thumb_ufpe.jpeg",
 		link:"certificates/GMOn.pdf"
-	}
-	],
-	[
+	},
 	{
 		name:"University Records",
 		thumb:"pictures/thumb_ufpe.jpeg",
@@ -200,7 +197,6 @@ certifArray=[
 		thumb:"pictures/thumb_icpc.png",
 		link:"certificates/ICPC2016.pdf"
 	}
-	]
 ];
 xps=[
 	{
