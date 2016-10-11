@@ -8,15 +8,13 @@ app.controller('MainController',function(){
 	this.overallprogress=1;
   	this.langChoice=0;
 
-	this.calcSize=function(){
-		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);	
-	}
+	
 	
   	this.changeArea=function(Carea){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		setTimeout(calcSize,1000);
+		setTimeout(function(){this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);},1000);
 	};
 
 	this.isArea=function(Carea){
