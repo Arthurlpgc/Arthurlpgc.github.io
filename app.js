@@ -6,13 +6,17 @@ app.controller('MainController',function(){
 	else this.area=1;
 	this.title=titles[this.area-1];
 	this.overallprogress=1;
-  this.langChoice=0;
+  	this.langChoice=0;
 
-  this.changeArea=function(Carea){
+	this.calcSize=function(){
+		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);	
+	}
+	
+  	this.changeArea=function(Carea){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
+		setTimeout(calcSize,1000);
 	};
 
 	this.isArea=function(Carea){
