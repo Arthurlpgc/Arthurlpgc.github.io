@@ -13,7 +13,7 @@
 		<span class="brand-logo center" style="width:100%">{{main.title}}</span>
 	</div></nav>
   	<div class="row" style="margin:0 0 0 0">
-		<div class="col s3 teal lighten-4" style="height:{{main.scrsize}}px;padding:0 0 0 0;" ng-style="{'height':'{{main.scrsize}}px'}" id="mainsidebar">
+		<div class="col s3 teal lighten-4" style="height:{{main.scrsize}}px;padding:0 0 0 0;" ng-style="{'height':'{{Math.max(window.innerHeight,document.getElementById('ola').clientHeight)}}px'}" id="mainsidebar">
 			<a class="waves-effect teal lighten-4 waves-teal btn-flat sideOption" ng-class="{'lighten-3':main.isArea(1),'lighten-4':!main.isArea(1)}" ng-click="main.changeArea(1)">profile</a>
 			<a class="waves-effect teal lighten-4 waves-teal btn-flat sideOption"  ng-class="{'lighten-3':main.isArea(2),'lighten-4':!main.isArea(2)}" ng-click="main.changeArea(2);main.langChoice=0;">Skills</a>
 			<a class="waves-effect teal lighten-4 waves-teal btn-flat sideOption"  ng-class="{'lighten-3':main.isArea(3),'lighten-4':!main.isArea(3)}" ng-click="main.changeArea(3)">Certificates and Links</a>
