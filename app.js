@@ -14,7 +14,7 @@ app.controller('MainController',function(){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		setTimeout(function(){document.getElementById('mainsidebar').height=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);},1000);
+		document.getElementById('mainsidebar').height=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	};
 
 	this.isArea=function(Carea){
