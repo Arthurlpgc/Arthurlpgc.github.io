@@ -12,7 +12,6 @@ app.controller('MainController',function(){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
-		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	};
 
 	this.isArea=function(Carea){
@@ -54,11 +53,6 @@ app.directive('clang',function(){
 app.directive('exp',function(){
 	return{
 		templateUrl:'experience.html'
-	};
-});
-app.directive('resizer',function(){
-	return{
-		templateUrl:'Resizer.html'
 	};
 });
 ProgLangs=[
