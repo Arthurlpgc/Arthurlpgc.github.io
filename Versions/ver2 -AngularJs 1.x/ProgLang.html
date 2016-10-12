@@ -1,0 +1,22 @@
+<div class="row">
+<div ng-repeat="lang in main.planguages |orderBy:main.plorder">
+	<div class="card" ng-show="lang.progress>0" ng-click="main.langChoice=main.planguages.indexOf(lang)+1" style="width:9em;height: 14em;float:left;margin-left: 1em">
+		<div class="card-image" style="padding:6px 6px 6px 6px;">
+			<img class="activator" style="height:8em;width: 8em;" ng-src="{{lang.thumb}}" />
+		</div>
+		<div class="card-content" style="padding-top: 0.5em;padding-bottom: 0em;">
+			<b class="card-title activator grey-text text-darken-3" style="font-size:1.2em;">{{lang.name}}</b>
+			<div class="progress">
+  				<div class="determinate" style="width: {{lang.progress/main.overallprogress}}%"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="row grey-text darken-text-2">
+<div class="col s4"></div><div class="col s4">Order by:
+<a class="grey-text darken-text-2" ng-click="main.plorder='name'">Name</a> |
+<a class="grey-text darken-text-2" ng-click="main.plorder='-relevance'">Relevance</a> |
+<a class="grey-text darken-text-2" ng-click="main.plorder='-progress'">Skill</a>
+</div><div class="col s4"></div>
+</div>
