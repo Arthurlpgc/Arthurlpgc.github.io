@@ -46,11 +46,6 @@ app.directive('dlang',function(){
 		templateUrl:'LangDetails.html'
 	};
 });
-
-app.directive('rszscript',function(){
-	return	"<script>	main.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);</script>";
-});
-
 app.directive('clang',function(){
 	return{
 		templateUrl:'Languages.html'
