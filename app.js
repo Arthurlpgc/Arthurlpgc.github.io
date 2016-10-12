@@ -13,6 +13,7 @@ app.controller('MainController',function(){
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
 		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
+	
 	};
 
 	this.isArea=function(Carea){
