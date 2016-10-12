@@ -56,6 +56,11 @@ app.directive('exp',function(){
 		templateUrl:'experience.html'
 	};
 });
+app.directive('resizer',function(){
+	return{
+		templateUrl:'Resizer.html'
+	};
+});
 ProgLangs=[
 	{
 		name:"C++",
