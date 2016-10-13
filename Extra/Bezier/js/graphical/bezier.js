@@ -55,7 +55,6 @@ var bernMeUp=function(){
 
 //lines on the screen
 var makeLines=function(){
-	deltaT=Math.min(2000,20+points.length*5);
 	path=new Path(points);
 	path.stroke('yellow',1);
 	bernMeUp();
@@ -88,17 +87,20 @@ squareTouch.on('click',function(ev){
 		dy+=e.diffY;
 		points[idx*2]=this.attr('x');
 		points[idx*2+1]=this.attr('y');
+		deltaT=100;
 		makeLines();
 	});
 	aux.on('multi:pointerup',function(e){
 		if(dx*dx+dy*dy<2){
 			circles.splice(idx,1);
 			points.splice(2*idx,2);
-			makeLines();
 		}
+		deltaT=Math.min(2000,20+points.length*5);
+		makeLines();
 	});
 
 	points.push(ev.x);
 	points.push(ev.y);
+	deltaT=Math.min(2000,20+points.length*5);
 	makeLines();
 });
