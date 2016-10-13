@@ -7,7 +7,7 @@ var points=[];
 var circles=[];
 var path;
 var curve;
-var deltaT=2000;//precision
+var deltaT=100;//precision
 var BN;
 //calculating BN
 var genBN=function(n){
@@ -18,8 +18,6 @@ var genBN=function(n){
 			BN[j]=BN[j]+BN[j-1];
 		}
 	}
-	console.log('BN');
-	console.log(BN);
 }
 
 //using bernstein formula
@@ -44,7 +42,6 @@ var bernMeUp=function(){
 		curvePTS.push(Xaux);
 		curvePTS.push(Yaux);
 	}
-	console.log(curvePTS);
 	curve=new Path(curvePTS);
 	curve.stroke('green',1);
 	var aux=[square,path,curve];
@@ -56,6 +53,7 @@ var bernMeUp=function(){
 
 //lines on the screen
 var makeLines=function(){
+	deltaT=Math.min(2000,20+points.lenght*5);
 	path=new Path(points);
 	path.stroke('yellow',1);
 	bernMeUp();
