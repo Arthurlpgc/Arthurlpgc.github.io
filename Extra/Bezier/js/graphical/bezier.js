@@ -53,7 +53,7 @@ var bernMeUp=function(){
 
 //lines on the screen
 var makeLines=function(){
-	deltaT=Math.min(2000,20+points.lenght*5);
+	deltaT=Math.min(2000,20+points.length*5);
 	path=new Path(points);
 	path.stroke('yellow',1);
 	bernMeUp();
