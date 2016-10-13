@@ -7,7 +7,7 @@ var points=[];
 var circles=[];
 var path;
 var curve;
-var deltaT=100;//precision
+var deltaT=2000;//precision
 var BN;
 //calculating BN
 var genBN=function(n){
