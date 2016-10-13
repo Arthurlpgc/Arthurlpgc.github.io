@@ -1,5 +1,7 @@
 var square=new Rect(0,0,500,500);
 square.addTo(stage);
+var squareTouch=new Rect(0,0,500,500);
+squareTouch.addTo(stage);
 square.fill('#001155');
 
 //graphical variables
@@ -44,7 +46,7 @@ var bernMeUp=function(){
 	}
 	curve=new Path(curvePTS);
 	curve.stroke('green',1);
-	var aux=[square,path,curve];
+	var aux=[square,path,curve,squareTouch];
 	for(var i=0;i<circles.length;i++){
 		aux.push(circles[i]);
 	}
@@ -60,10 +62,42 @@ var makeLines=function(){
 }
 
 //create point and call lines
-stage.on('click',function(ev){
+squareTouch.on('click',function(ev){
 	var aux=new Circle(ev.x,ev.y,2);//TODO size of point
 	aux.fill('white');
 	circles.push(aux);
+
+	//drag event
+	var x,y,dx,dy,idx;
+	aux.on('multi:pointerdown',function(e){
+		x=this.attr('x');
+		y=this.attr('y');
+		dx=0;dy=0;
+		for(var i=0;i<circles.length;i++){
+			if(circles[i]===aux){
+				idx=i;
+			}
+		}
+	});
+	aux.on('multi:drag',function(e){
+		this.attr({
+			x:x+e.diffX,
+			y:y+e.diffY
+		});
+		dx+=e.diffX;
+		dy+=e.diffY;
+		points[idx*2]=this.attr('x');
+		points[idx*2+1]=this.attr('y');
+		makeLines();
+	});
+	aux.on('multi:pointerup',function(e){
+		if(dx*dx+dy*dy<2){
+			circles.splice(idx,1);
+			points.splice(2*idx,2);
+			makeLines();
+		}
+	});
+
 	points.push(ev.x);
 	points.push(ev.y);
 	makeLines();
