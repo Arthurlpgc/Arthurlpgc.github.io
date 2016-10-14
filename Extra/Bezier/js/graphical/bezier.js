@@ -10,36 +10,48 @@ var circles=[];
 var path;
 var curve;
 var deltaT=100;//precision
-var BN;
+var BN=[[0,1,0]];
+
 //calculating BN
 var genBN=function(n){
-	BN=[0,1];
-	for(var i=0;i<n;i++)BN.push(0);
-	for(var i=1;i<=n;i++){
-		for(var j=i+1;j>0;j--){
-			BN[j]=BN[j]+BN[j-1];
-		}
+	if(BN.length>=n)return BN[n-1];
+	var aux=genBN(n-1);
+	var TBN=[];
+	for(var i=0;i<aux.length;i++){
+		TBN.push(aux[i]);
 	}
+	TBN.push(0);
+	for(var j=n+1;j>0;j--){
+		TBN[j]=TBN[j]+TBN[j-1];
+	}
+	BN.push(TBN);
+	return TBN;
 }
 
 //using bernstein formula
 var bernMeUp=function(){
 	var curvePTS=[points[0],points[1]];
 	var n=points.length/2;
-	genBN(n-1);
+	TBN=genBN(n);
+	var ts=[1];
+	var ats=[1];
+	for(var i=0;i<deltaT;i++){
+		ts.push(0);
+		ats.push(0);
+	}
 	for(var count=1;count<deltaT+1;count++){
 		var t=count/deltaT;
 		var ts=[1];
 		var ats=[1];
 		for(var i=0;i<deltaT;i++){
-			ts.push(ts[i]*t);
-			ats.push(ats[i]*(1-t));
+			ts[i+1]=(ts[i]*t);
+			ats[i+1]=(ats[i]*(1-t));
 		}
 		var Xaux=0;
 		var Yaux=0;
 		for(var i=0;i<n;i++){
-			Xaux=Xaux+BN[i+1]*points[2*i]*ts[i]*ats[n-i-1];
-			Yaux=Yaux+BN[i+1]*points[2*i+1]*ts[i]*ats[n-i-1];
+			Xaux=Xaux+TBN[i+1]*points[2*i]*ts[i]*ats[n-i-1];
+			Yaux=Yaux+TBN[i+1]*points[2*i+1]*ts[i]*ats[n-i-1];
 		}
 		curvePTS.push(Xaux);
 		curvePTS.push(Yaux);
@@ -87,7 +99,7 @@ squareTouch.on('click',function(ev){
 		dy+=e.diffY;
 		points[idx*2]=this.attr('x');
 		points[idx*2+1]=this.attr('y');
-		deltaT=100;
+		deltaT=500;
 		makeLines();
 	});
 	aux.on('multi:pointerup',function(e){
