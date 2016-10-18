@@ -13,7 +13,7 @@ app.controller('MainController',function(){
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
 		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
-	
+
 	};
 
 	this.isArea=function(Carea){
@@ -66,6 +66,15 @@ ProgLangs=[
     desc:"C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.",
 		experiences:["Coding for the International Collegiate Programming Contest","Algorithms tutorials in C++, in the Llamas in pajamas GitHub team"],
 		date:"2016-03-05T01:01:01.001Z"
+	},
+	{
+		name:"R",
+		thumb:"pictures/langs/thumb_r.png",
+		progress:20,
+		relevance:45,
+    desc:"R is a free software environment for statistical computing and graphics.",
+		experiences:["Projects for statistics subject in university"],
+		date:"2015-08-05T01:01:01.001Z"
 	},
 	{
 		name:"Java",
