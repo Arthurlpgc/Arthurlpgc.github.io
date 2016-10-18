@@ -77,6 +77,15 @@ ProgLangs=[
 		date:"2015-08-05T01:01:01.001Z"
 	},
 	{
+		name:"Matlab",
+		thumb:"pictures/langs/thumb_matlab.jpg",
+		progress:10,
+		relevance:46,
+    desc:"MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment and fourth-generation programming language.",
+		experiences:["Projects for Machine Learning course on Coursera"],
+		date:"2015-08-05T01:01:01.001Z"
+	},
+	{
 		name:"Java",
 		thumb:"pictures/langs/thumb_java.png",
 		progress:90,
