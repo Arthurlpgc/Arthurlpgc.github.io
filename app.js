@@ -7,13 +7,18 @@ app.controller('MainController',function(){
 	this.title=titles[this.area-1];
 	this.overallprogress=1;
   this.langChoice=0;
-
+	this.resizeIt=function(int x){
+		if(x){
+			this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
+			setTimeout(resizeIt(x-1),30);
+		}
+	}
   this.changeArea=function(Carea){
 		this.area=Carea;
 		document.cookie="area="+Carea+";";
 		this.title=titles[this.area-1];
 		this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
-
+		this.resizeIt(100);
 	};
 
 	this.isArea=function(Carea){
