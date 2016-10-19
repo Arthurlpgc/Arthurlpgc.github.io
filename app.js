@@ -8,7 +8,7 @@ app.controller('MainController',function(){
 	this.overallprogress=1;
   this.langChoice=0;
 	this.resizeIt=function(int x){
-		if(x){
+		if(x>0){
 			this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 			setTimeout(resizeIt(x-1),30);
 		}
