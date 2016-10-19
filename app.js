@@ -11,7 +11,7 @@ app.controller('MainController',function(){
 		if(x>0){
 			this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 			document.getElementById('mainsidebar').style.height=this.scrsize;
-			setTimeout(resizeIt(x-1),30);
+			setTimeout(this.resizeIt(x-1),30);
 		}
 	}
   this.changeArea=function(Carea){
