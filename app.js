@@ -144,7 +144,7 @@ ProgLangs=[
 		progress:40,
 		relevance:60,
     desc:"Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.",
-		experiences:["Competitive Programming on a few Codeforces","Algorithms tutorials in python, in the Llamas in pajamas GitHub team","<3The first time I tried to code smt<3"],
+		experiences:["Competitive Programming on a few Codeforces","Algorithms tutorials in python, in the Llamas in pajamas GitHub team","The first time I tried to code something."],
 		date:"2010-09-05T01:01:01.001Z"
 	},
 	{
