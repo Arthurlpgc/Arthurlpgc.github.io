@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-	<script> var reloadModals=function(){$('.modal-trigger').leanModal();console.log('Modals Reload');setTimeout(reloadModals(),500);};
-		 reloadModals();</script>
+	<script>$('.modal-trigger').leanModal();</script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller='MainController as main'>
@@ -29,6 +28,11 @@
 			<clang ng-show="main.isArea(2)"></clang>
 			<certif ng-show="main.isArea(3)"></certif>
 			<exp ng-show="main.isArea(4)"></exp>
+			<div id="langmodal" class="modal">
+				<div class="modal-content">
+							<img style="height:8em;width: 8em;"ng-src="{{main.planguages[main.langChoice-1].thumb}}" />
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
