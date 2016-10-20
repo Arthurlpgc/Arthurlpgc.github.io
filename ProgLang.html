@@ -1,4 +1,5 @@
 <div class="row">
+	<a class="modal-trigger" href="#langmodal">a</a>
 <div ng-repeat="lang in main.planguages |orderBy:main.plorder">
 	<a class="modal-trigger" href="#langmodal">
 	<div class="card" ng-show="lang.progress>0" ng-click="main.langChoice=main.planguages.indexOf(lang)+1" style="width:9em;height: 14em;float:left;margin-left: 1em">
