@@ -1,6 +1,6 @@
 <div class="row">
 <div ng-repeat="lang in main.planguages |orderBy:main.plorder">
-	<a class="modal-trigger" href="#langModal">
+	<a class="modal-trigger" href="#langmodal">
 	<div class="card" ng-show="lang.progress>0" ng-click="main.langChoice=main.planguages.indexOf(lang)+1" style="width:9em;height: 14em;float:left;margin-left: 1em">
 		<div class="card-image" style="padding:6px 6px 6px 6px;">
 			<img class="activator" style="height:8em;width: 8em;" ng-src="{{lang.thumb}}" />
@@ -22,7 +22,7 @@
 <a class="grey-text darken-text-2" ng-click="main.plorder='-progress'">Skill</a>
 </div><div class="col s4"></div>
 </div>
-<div id="langModal" class="modal">
+<div id="langmodal" class="modal">
 	<div class="modal-content">
 				<img class="activator" style="height:8em;width: 8em;"ng-src="{{main.planguages[main.langChoice-1].thumb}}" />
 	</div>
