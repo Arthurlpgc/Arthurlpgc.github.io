@@ -23,26 +23,12 @@
 </div><div class="col s4"></div>
 </div>
 <div id="langmodal" class="modal">
+	<script>this.reloadModals=function(){$('.modal-trigger').leanModal();setTimeout(this.reloadModals(),500);};
+	this.reloadModals();</script>
 	<div class="modal-content">ola
 				<!--img style="height:8em;width: 8em;"ng-src="{{main.planguages[main.langChoice-1].thumb}}" /-->
 	</div>
 </div>
 
-<script>
-  $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-  });</script>
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+  <!-- Modal Trigger -->
