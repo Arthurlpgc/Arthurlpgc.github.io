@@ -1,5 +1,4 @@
 <div class="row">
-	<a class="modal-trigger btn" href="#langmodal">a</a>
 <div ng-repeat="lang in main.planguages |orderBy:main.plorder">
 	<a class="modal-trigger" href="#langmodal">
 	<div class="card" ng-show="lang.progress>0" ng-click="main.langChoice=main.planguages.indexOf(lang)+1" style="width:9em;height: 14em;float:left;margin-left: 1em">
@@ -28,16 +27,3 @@
 				<!--img style="height:8em;width: 8em;"ng-src="{{main.planguages[main.langChoice-1].thumb}}" /-->
 	</div>
 </div>
-<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
