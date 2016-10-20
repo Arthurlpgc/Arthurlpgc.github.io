@@ -1,5 +1,6 @@
 var app=angular.module('MainApp',[ ]);
 app.controller('MainController',function(){
+	setInterval(function(){console.log('debug');$('.modal-trigger').leanModal()},500);
 	this.scrsize=Math.max(window.innerHeight,document.getElementById('ola').clientHeight);
 	var aux=document.cookie;
 	if(aux)this.area=parseInt(aux.substring(5,6));
