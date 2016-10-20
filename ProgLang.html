@@ -1,6 +1,7 @@
 <div class="row">
 <div ng-repeat="lang in main.planguages |orderBy:main.plorder">
-	<a class="modal-trigger" on-click="  $('.modal-trigger').leanModal();" href="#langmodal">
+	<script> setInterval(function(){$('.modal-trigger').leanModal()},500);</script>
+	<a class="modal-trigger" href="#langmodal">
 	<div class="card" ng-show="lang.progress>0" ng-click="main.langChoice=main.planguages.indexOf(lang)+1" style="width:9em;height: 14em;float:left;margin-left: 1em">
 		<div class="card-image" style="padding:6px 6px 6px 6px;">
 			<img class="activator" style="height:8em;width: 8em;" ng-src="{{lang.thumb}}" />
