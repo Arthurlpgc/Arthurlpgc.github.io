@@ -1,6 +1,7 @@
 <DOCTYPE html>
 <html ng-app='MainApp'>
 <head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -10,13 +11,14 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script></head>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="app.js"></script>
-<body>
+<body ng-controller='MainController as main'>
 <navbar></navbar>
-<div class="panel panel-default">
-  <div class="panel-body">
-    Basic panel example
+<div>
+  <div ng-show="main.isArea(1)" class="panel panel-default" >
+    <div class="panel-body">
+      Email: alpgc@cin.ufpe.br
+    </div>
   </div>
 </div>
 </body>
