@@ -20,3 +20,8 @@ app.directive('mailpage',function(){
 		templateUrl:'mail.html'
 	};
 });
+app.directive('academic',function(){
+	return{
+		templateUrl:'academic.html'
+	};
+});
