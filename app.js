@@ -25,3 +25,8 @@ app.directive('academic',function(){
 		templateUrl:'academic.html'
 	};
 });
+app.directive('projects',function(){
+	return{
+		templateUrl:'projects.html'
+	};
+});
