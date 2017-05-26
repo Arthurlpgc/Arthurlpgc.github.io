@@ -1,6 +1,6 @@
 var app=angular.module('MainApp',[ ]);
 app.controller('MainController',function(){
-	this.area=0
+	this.area=2
 	this.changeArea=function(Carea){
 		this.area=Carea;
 	};
