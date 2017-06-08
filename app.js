@@ -30,3 +30,8 @@ app.directive('projects',function(){
 		templateUrl:'projects.html'
 	};
 });
+app.directive('experience',function(){
+	return{
+		templateUrl:'experience.html'
+	};
+});
