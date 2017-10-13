@@ -1,26 +1,19 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Alpgc</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#" ng-click="main.changeArea(1)">Contact Me</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a ng-click="main.changeArea(4)">Experience</a></li>
-        <li><a ng-click="main.changeArea(2)">Academic</a></li>
-        <li><a ng-click="main.changeArea(3)">Projects</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+<nav>
+	<style>
+	a:hover{
+		text-decoration: none;
+		color: white;
+	}
+	</style>
+  <div class="nav-wrapper blue-grey darken-3">
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+			<li><a href="#" style="font-size:2em">ALPGC</a></li>
+      <li><a href="#" ng-click="main.changeArea(1)">Contact Me</a></li>
+		</ul>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a ng-click="main.changeArea(4)">Experience</a></li>
+      <li><a ng-click="main.changeArea(2)">Academic</a></li>
+      <li><a ng-click="main.changeArea(3)">Projects</a></li>
+    </ul>
+  </div>
 </nav>
